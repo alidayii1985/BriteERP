@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Brite ERP" verbose="1" >
+    <test name="Brite ERP Automated Tests"   >
+        <packages>
+            <package name="com.briteerp.tests.components.expenses"></package>
+
+            <package name="com.briteerp.tests.components.crm"></package>
+        </packages>
+    </test>
+</suite>

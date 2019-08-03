@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BriteERP Automation Tests" parallel="tests" verbose="2">
+
+
+
+
+    <test name="Firefox Tests">
+        <parameter name="browser" value="firefox"></parameter>
+        <packages>
+            <package name=".*"></package>
+
+        </packages>
+
+
+    </test>
+
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name=".*"></package>
+
+        </packages>
+
+
+    </test>
+
+
+
+
+
+</suite>

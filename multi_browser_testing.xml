@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BriteERP Automation Tests" verbose="2">
+
+    <test name="Expense Functionality Test using Firefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <packages>
+            <package name="com.briteerp.tests.components.expenses"/>
+
+        </packages>
+
+
+    </test>
+
+    <test name="Expense Functionality Test using Chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name="com.briteerp.tests.components.expenses"/>
+
+        </packages>
+
+
+    </test>
+
+
+
+
+
+</suite>

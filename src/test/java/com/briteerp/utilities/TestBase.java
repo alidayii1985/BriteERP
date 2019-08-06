@@ -61,7 +61,7 @@ public abstract class TestBase {  //abstract because we dont want instance from 
     public void tearDownMethod(ITestResult result) throws IOException {
 
         if(result.getStatus()==ITestResult.FAILURE){
-            String screenshotLocation=BrowserUtils.getScreenshot(result.getName());
+            String screenshotLocation=SeleniumUtils.getScreenshot(result.getName());
             extentLogger.fail(result.getName());
             extentLogger.addScreenCaptureFromPath(screenshotLocation);
             extentLogger.fail(result.getThrowable());
@@ -87,7 +87,7 @@ public abstract class TestBase {  //abstract because we dont want instance from 
 
         report.attachReporter(htmlReporter);
 
-        report.setSystemInfo("Browser",ConfigurationReader.getProperty("browser"));
+        report.setSystemInfo("Browser",ConfigurationReader.getProperty(ApplicationConstants.BROWSERCHROME));
         report.setSystemInfo("QA Engineer","Mehmet Durkan");
 
 

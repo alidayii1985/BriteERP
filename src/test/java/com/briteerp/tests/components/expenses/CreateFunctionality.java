@@ -164,7 +164,7 @@ public class CreateFunctionality extends TestBase {
 
         extentLogger.info("Verify the Name Shown on Expense Form Employee Text Box is the Same Name Selected from Search More Function");
         Assert.assertEquals(pages.expensesPage().newExpensesToSubmitFormEmployeeNameDropDownButton.getAttribute("value"),
-                            ApplicationConstants.SEARCH_MORE_EMPLOYEE_NAME);
+                ApplicationConstants.SEARCH_MORE_EMPLOYEE_NAME);
 
         extentLogger.pass("PASS- Search More option for Employee Selection");
     }

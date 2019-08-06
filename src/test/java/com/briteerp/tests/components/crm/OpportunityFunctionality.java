@@ -208,13 +208,13 @@ public class OpportunityFunctionality extends TestBase {
         extentLogger.info("Click on Opportunity");
         pages.crmPage().pivotMenuOpportunitySelection.click();
 
-        SeleniumUtils.waitPlease(3);
+        SeleniumUtils.waitPlease(5);
 
 
 
         double expectedTotal=0;
 
-        for(int i=2;i<pages.crmPage().pivotMenuOpportunityTableExpectedRevenueColumn.size();i++)
+        for(int i=2;i<=pages.crmPage().pivotMenuOpportunityTableExpectedRevenueColumn.size();i++)
         {
            String revenue= pages.crmPage().getRevenueByRowNumber(i);
            double rev=Double.parseDouble(revenue.substring(0,revenue.length()-1).replaceAll(",",""));
